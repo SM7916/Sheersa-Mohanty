@@ -1,0 +1,34 @@
+UIAF - User Interface for Automation Frameworks V1.0
+
+This UIAF launchpad consists of frameworks for the following tools,
+1. HP UFT
+2. IBM RFT
+3. Selenium
+4. Appium
+5. Record and Run Facility
+6. Script Generator
+
+STeF for UFT:
+Scriptless Test Framework (STeF) is developed for HP UFT with integrations with tools like HP ALM and JIRA
+Contributed By:
+GTA Team
+
+IBM RFT:
+Framework developed with Hybrid approach using Keywords and Data Parameterization. Reusable methods were developed and converted to keywords
+Contributed By:
+Framework - GTA Team (Rajkumar Natarajan)
+Reusable methods - TAC Team
+
+Selenium:
+Framework developed with Hybrid approach using Keywords and Data Parameterization. Reusable methods were developed and converted to keywords
+Contributed By:
+Framework: GTA Team (Rajkumar Natarajan)
+GTA Team
+
+SoapUI:
+This SoapUI framework assetization is in progress..
+
+
+Note: UIAF launchpad is developed by GTA Team and property of IBM. For any modifications/changes reach out to,
+Rajkumar Natarajan(rnatara8@in.ibm.com)
+Margaret D(margaret.d@in.ibm.com)

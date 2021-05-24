@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation     A test suite with a single test for undefined
+...               Created by hats' Robotcorder
+Library           Selenium2Library    timeout=10
+
+*** Variables ***
+${BROWSER}    chrome
+${SLEEP}    3
+
+*** Test Cases ***
+undefined test
+    Open Browser    undefined    ${BROWSER}
+    Input Text    //input[@name="txtUsername"]    admin
+    Input Text    //input[@name="txtPassword"]    ***
+    Click Element    //input[@name="Submit"]
+    Click Element    xpath=(//b)[5]
+    Select From List By Value    //select[@name="candidateSearch[jobTitle]"]    7
+    Click Element    xpath=(//ol)[2]
+    Click Element    //input[@name="btnSrch"]
+    Click Element    //input[@name="btnAdd"]
+    Input Text    //input[@name="addCandidate[firstName]"]    Sangeetha
+    Input Text    //input[@name="addCandidate[middleName]"]    R
+    Input Text    //input[@name="addCandidate[lastName]"]    Raveendran
+    Input Text    //input[@name="addCandidate[email]"]    sanforsuccess@gmail.com
+    Input Text    //input[@name="addCandidate[contactNo]"]    1234567890
+    Click Element    xpath=(//li)[87]
+    Input Text    //input[@name="addCandidate[keyWords]"]    Selenium
+    Input Text    //textarea[@name="addCandidate[comment]"]    Vacancy for Selenium automation
+    Click Element    xpath=(//li)[89]
+    Click Element    //input[@id="btnSave"]
+
+    Close Browser

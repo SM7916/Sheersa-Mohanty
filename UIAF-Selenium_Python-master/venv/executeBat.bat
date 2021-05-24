@@ -1,0 +1,1 @@
+%CD%\Scripts\python.exe %CD%/executeBat.py

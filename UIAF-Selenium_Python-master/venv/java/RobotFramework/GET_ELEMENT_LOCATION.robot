@@ -1,0 +1,13 @@
+*** Settings ***
+Library   SapGuiLibrary
+
+*** Variables ***
+${saplogonscreen}  /app/con[0]/ses[0]/
+${objval}  Default
+${connection_name}   Default
+
+*** Test Cases ***
+GET_ELEMENT_LOCATION
+    connect to session
+    Connect To Existing Connection  ${connection_name}
+    get element location  ${saplogonscreen}${objval}
